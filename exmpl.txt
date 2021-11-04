@@ -1,0 +1,82 @@
+<div class="container">
+                <div class="tabs">
+                    <ul class="tabs__nav">
+                        <li class="tabs-item active" role="button">Tab1</li>
+                        <li class="tabs-item" role="button">Tab2</li>
+                        <li class="tabs-item" role="button">Tab3</li>
+                    </ul>
+                    <div class="tabs__content">
+                        <p class="tabs-block active">
+                            [1]Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius,
+                            tempora consectetur vitae sit eos, quo numquam facere nesciunt ut
+                            dolorum, nisi incidunt! Maxime blanditiis temporibus aliquid architecto,
+                            quos doloremque earum.[1]Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Eius, tempora consectetur vitae sit eos, quo numquam
+                            facere nesciunt ut dolorum, nisi incidunt! Maxime blanditiis temporibus
+                            aliquid architecto, quos doloremque earum.
+                        </p>
+                        <p class="tabs-block">
+                            [2]Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius,
+                            tempora consectetur vitae sit eos, quo numquam facere nesciunt ut
+                            dolorum, nisi incidunt! Maxime blanditiis temporibus aliquid architecto,
+                            quos doloremque earum. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Molestias distinctio quisquam, earum voluptas,
+                            veritatis magni quidem vitae officiis non sed iusto, nam culpa? Quas
+                            voluptatum sed nesciunt ducimus! Praesentium, atque! Ut corporis ea,
+                            ducimus ipsum tempore distinctio delectus, atque architecto maxime
+                            impedit praesentium accusantium eum necessitatibus non obcaecati
+                            repellendus provident fugiat error nesciunt, assumenda dolore quasi!
+                            Accusantium aut soluta commodi. Enim mollitia modi consequuntur,
+                            voluptate veniam impedit totam labore nobis sapiente, odio alias.
+                            Dolorum similique ut suscipit odio quod quis itaque ea expedita quo,
+                            voluptas enim, sunt at repudiandae nam? Perferendis odit amet tempora
+                            accusantium commodi, veritatis nemo, excepturi, eos quam debitis quidem
+                            illo. Libero mollitia labore delectus consequuntur alias corporis rem,
+                            explicabo ut doloremque ratione in optio praesentium. Nulla. Rem atque
+                            harum tempora corrupti quae reprehenderit saepe totam at? Esse ab,
+                            voluptatem animi vel atque asperiores? Error consequatur voluptas itaque
+                            illum sequi, illo, odit explicabo impedit quaerat delectus voluptatem!
+                        </p>
+                        <p class="tabs-block">
+                            [3]Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius,
+                            tempora consectetur vitae sit eos, quo numquam facere nesciunt ut
+                            dolorum, nisi incidunt! Maxime blanditiis temporibus aliquid architecto,
+                            quos doloremque earum.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-box">
+                    <ul class="accordion-list">
+                        <li class="accordion">
+                            <button class="accordion__control" aria-expanded="false">
+                                <span class="accordion__title">Accordion 1</span>
+                                <span class="accordion__icon"></span>
+                            </button>
+                            <div class="accordion__content" aria-hidden="true">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+                                hic tempora soluta at earum mollitia corporis. Non vero in ab
+                                incidunt saepe quis cumque cupiditate laborum? Aliquam et ullam
+                                nihil.
+                            </div>
+                        </li>
+                        <li class="accordion">
+                            <button class="accordion__control" aria-expanded="false">
+                                <span class="accordion__title">Accordion 1</span>
+                                <span class="accordion__icon"></span>
+                            </button>
+                            <div class="accordion__content" aria-hidden="true">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+                                hic tempora soluta at earum mollitia corporis. Non vero in ab
+                                incidunt saepe quis cumque cupiditate laborum? Aliquam et ullam
+                                nihil.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box-popup">
+                    Lorem ipsum dolor, sit <a class="popup-link" href="#callback">test</a> amet
+                    consectetur adipisicing elit. Magnam repellendus voluptate labore nulla sapiente
+                    nesciunt dolorum praesentium rerum, ad quo architecto accusamus nobis ullam,
+                    quisquam incidunt saepe ea, consequuntur maxime.
+                </div>
+            </div>

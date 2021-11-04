@@ -1,0 +1,35 @@
+.tabs {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 1200px;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.tabs-item {
+    display: block;
+    background-color: #c3c3c3;
+    cursor: pointer;
+
+    &.active {
+        background-color: #eee000;
+    }
+}
+
+.tabs-block {
+    display: none;
+    opacity: 0;
+
+    &.active {
+        display: block;
+        opacity: 1;
+        backface-visibility: visible !important;
+        animation-name: flipInX;
+        animation-name: flipInX;
+        animation-duration: 1s;
+    }
+}
