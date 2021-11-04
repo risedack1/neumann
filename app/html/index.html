@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pavel Neumann</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css">
     <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
-<body>
-    <header class="header fp">
+<body id="fullpage">
+    <header class="header fullp section">
         <div class="container">
             <div class="burger">
                 <button class="burger__btn" type="button" aria-label="открыть меню">
@@ -90,8 +91,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="fp__inner">
-                <div class="header__content fp__content">
+            <div class="fullp__inner">
+                <div class="header__content fullp__content">
                     <div class="header__social social-block">
                         <span class="social-block__title">
                             Мои соцсети:
@@ -155,19 +156,42 @@
                     </div>
                     <a class="header__arrow" href="#"></a>
                 </div>
-                <div class="fp__image-box">
-                    <img src="../images/header-photo.jpg" alt="[hoto">
+                <div class="fullp__image-box">
+                    <img src="images/header-photo.jpg" alt="photo">
                 </div>
             </div>
         </div>
     </header>
-    <main class="main">
+
+    <section class="about fullp section">
         <div class="container">
-
+            <div class="fullp__inner fullp__inner--revers">
+                <div class="fullp__content fullp__content--center">
+                    content
+                </div>
+                <div class="fullp__image-box">
+                    <img src="images/header-photo.jpg" alt="photo">
+                </div>
+            </div>
         </div>
+    </section>
 
-        @@include('./parts/_popup.html')
-    </main>
+    <section class="about fullp section">
+        <div class="container">
+            <div class="fullp__inner fullp__inner--revers">
+                <div class="fullp__content fullp__content--center">
+                    content
+                </div>
+                <div class="fullp__image-box">
+                    <img src="images/header-photo.jpg" alt="photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @@include('./parts/_popup.html')
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
 

@@ -91,7 +91,11 @@
     font-weight: 600;
     transition: right 0.3s;
 
-    &__list {}
+    &__list {
+        @include w($xl) {
+            padding-top: 50px;
+        }
+    }
 
     &__item {}
 
@@ -99,6 +103,10 @@
         display: block;
         padding: 14px 24px;
         transition: color 0.3s, background-color 0.3s;
+
+        @include w($xl) {
+            padding: 10px 24px;
+        }
 
         &--home {
             position: relative;
@@ -131,7 +139,8 @@
     }
 
     &__social {
-        padding: 14px 24px;
+        padding: 0 24px;
+
     }
 }
 
