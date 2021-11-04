@@ -22,6 +22,14 @@ document.addEventListener('click', function (e) {
     }
 });
 
+new fullpage('#fullpage', {
+    //options here
+    sectionSelector: '.section',
+});
+
+//methods
+// fullpage_api.setAllowScrolling(false);
+
 document.addEventListener('DOMContentLoaded', () => {
     const accordions = document.querySelectorAll('.accordion');
 
