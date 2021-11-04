@@ -1,0 +1,149 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.6;
+    color: $light;
+    background-color: $bg-dark;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.fp {
+    min-height: 100vh;
+
+    &__inner {
+        display: flex;
+    }
+
+    &__content {
+        flex: 1 1 auto;
+    }
+
+    &__image-box {
+        @include adaptiv-value("max-width", 820, 265, 1);
+
+        height: 100vh;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.container {
+    // @include adaptiv-value("padding-right", 820, 265, 1);
+    max-width: $container + px;
+
+    &--revers {
+        flex-direction: row-reverse;
+    }
+}
+
+.sr-only {
+    position: absolute;
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+    clip-path: inset(0 0 0 0);
+    overflow: hidden;
+    border: 0;
+    white-space: nowrap;
+}
+
+.title {
+    @include w($sm) {}
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 1.3;
+    color: $primary;
+}
+
+ol.counter {
+    list-style-type: none;
+    counter-reset: item;
+
+    li {
+        position: relative;
+        padding: 0 0 0 45px;
+
+        &::before {
+            content: counter(item);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 28px;
+            height: 28px;
+            counter-increment: item;
+            border: 1px solid #4274bb;
+            border-radius: 50%;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 26px;
+            text-align: center;
+            color: #818181;
+        }
+    }
+}
+
+.ibg {
+    position: relative;
+
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+
+    video,
+    iframe,
+    object,
+    embed {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.videobg {
+    video,
+    iframe,
+    object,
+    embed {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        z-index: -100;
+        width: auto;
+        height: auto;
+        min-width: 100%;
+        min-height: 100%;
+        background-size: cover;
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
