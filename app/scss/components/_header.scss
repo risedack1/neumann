@@ -1,4 +1,4 @@
-.header {
+.hero {
     position: relative;
 
     &::before {
@@ -18,11 +18,15 @@
         }
     }
 
+    &__title {
+        @include adaptiv-value("font-size", 64, 36, 1);
+    }
+
     &__content {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        padding: 0 50px 0 10px;
+        padding: 0 50px 0 30px;
         width: 100%;
         max-width: 700px;
         background-image: url("../images/header-bg-1.svg"), url("../images/header-bg-2.svg"), url("../images/header-bg-3.svg"), url("../images/header-bg-4.svg");
@@ -114,6 +118,7 @@
     margin: 0;
     margin-bottom: 40px;
     width: auto;
+    max-width: 520px;
 
     @include w($xl) {
         margin-bottom: 20px;
@@ -170,8 +175,12 @@
     }
 
     &__dots {
-        margin: 0 auto;
+        margin: 0 auto 40px;
         width: 70px;
+
+        @include w($xl) {
+            margin-bottom: 30px;
+        }
     }
 
     &__dots-item {
@@ -198,6 +207,35 @@
             animation-name: flipInX;
             animation-duration: 1s;
         }
+    }
+}
+
+.fixed-block {
+    position: fixed;
+    bottom: 7%;
+    right: 7%;
+    z-index: 8;
+
+    &__up,
+    &__facebook {
+        display: block;
+        width: 50px;
+        height: 50px;
+        background-image: url('../images/up-arrow.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__up {
+        margin-bottom: 20px;
+    }
+
+    &__facebook {
+        margin: 0 -5px;
+        width: 60px;
+        height: 60px;
+        background-image: url('../images/icons/facebook-icon.svg');
     }
 }
 

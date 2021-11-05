@@ -100,6 +100,7 @@
     &__item {}
 
     &__link {
+        position: relative;
         display: block;
         padding: 14px 24px;
         transition: color 0.3s, background-color 0.3s;
@@ -108,38 +109,70 @@
             padding: 10px 24px;
         }
 
-        &--home {
-            position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+        }
 
-            svg {
-                position: absolute;
-                top: 50%;
-                right: 160px;
-                width: 30px;
-                height: 30px;
-                transform: translateY(-50%);
-                fill: currentColor;
-            }
-
-            &::after {
-                content: '';
-                position: absolute;
-                top: 50%;
-                right: 20px;
-                transform: translateY(-50%);
-                height: 4px;
-                width: 120px;
-                background-color: $light;
-            }
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: 7;
+            top: 50%;
+            right: -100%;
+            transform: translateY(-50%);
+            height: 4px;
+            width: 80%;
+            background-color: $light;
+            transition: right 0.3s;
         }
 
         &:hover {
             background-color: #3a3a3a;
         }
+
+        &:hover .block-menu__link-text {
+            background-color: #3a3a3a;
+        }
+    }
+
+    &__link-text {
+        position: relative;
+        display: inline-block;
+        z-index: 12;
+        padding-right: 15px;
+        background-color: $bg-dark;
+        transition: background-color 0.3s;
+
+        &--home {
+            padding-right: 45px;
+
+            svg {
+                position: absolute;
+                top: 50%;
+                right: 10px;
+                z-index: 15;
+                width: 30px;
+                height: 30px;
+                transform: translateY(-50%);
+                fill: currentColor;
+            }
+        }
     }
 
     &__social {
         padding: 0 24px;
+
+        .social-block__title {
+            font-weight: 700;
+        }
 
     }
 }
@@ -150,4 +183,8 @@
 
 .block-menu__link.active {
     color: $light;
+
+    &::after {
+        right: 20px;
+    }
 }
