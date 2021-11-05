@@ -25,6 +25,7 @@ document.addEventListener('click', function (e) {
 new fullpage('#fullpage', {
     //options here
     sectionSelector: '.section',
+    menu: "#menu",
 });
 
 //methods
