@@ -1,0 +1,30 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+
+    &__inner {
+        text-align: center;
+    }
+
+    &__link {
+        height: 82px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__text {
+        margin-right: 10px;
+        color: $light;
+        font-size: 12px;
+        font-weight: 800;
+    }
+
+    &__image {
+        width: 154px;
+        height: 46px;
+    }
+}
