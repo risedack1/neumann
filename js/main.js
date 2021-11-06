@@ -26,6 +26,7 @@ new fullpage('#fullpage', {
     //options here
     sectionSelector: '.section',
     menu: "#menu",
+    scrollingSpeed: 1000,
 });
 
 //methods

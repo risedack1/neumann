@@ -4,7 +4,6 @@
 @import "reset";
 @import "libs";
 @import "global";
-
 @import "main";
 
 // components
@@ -13,6 +12,7 @@
 @import "components/popup";
 @import "components/header";
 @import "components/menu";
+@import "components/footer";
 
 .test {
     // @include adaptiv-value("padding", 100, 10, 1);
