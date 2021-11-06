@@ -48,7 +48,7 @@
 
     &--bg {
         background-image: url("../images/icons/work-bg.svg");
-        background-position: 60% center;
+        background-position: 45% center;
         background-size: 30%;
         background-repeat: no-repeat;
     }
@@ -85,11 +85,12 @@
         display: flex;
         flex-direction: column;
         justify-content: start;
+        align-items: center;
         width: 100%;
-        max-width: 500px;
+        max-width: 600px;
 
         @include w($xl) {
-            max-width: 400px;
+            max-width: 500px;
         }
     }
 }
@@ -109,11 +110,13 @@
 
     &__title {
         margin-bottom: 30px;
-        font-size: 64px;
+        font-size: 50px;
+        max-width: 370px;
 
         @include w($xl) {
-            @include adaptiv-value("font-size", 64, 22, 1);
+            @include adaptiv-value("font-size", 50, 22, 1);
             margin-bottom: 20px;
+            max-width: 320px;
         }
     }
 
@@ -123,6 +126,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: stretch;
         width: 100%;
         max-width: 500px;
 
@@ -141,7 +145,8 @@
 
     &__top {
         margin-bottom: auto;
-        padding: 30px 50px 0;
+        margin-top: auto;
+        padding: 0px 50px 0;
 
         @include w($xl) {
             padding: 0;
@@ -171,6 +176,7 @@
         // object-fit: cover;
     }
 }
+
 
 .benefits {
     &__title {
@@ -228,6 +234,20 @@
         @include w($xl) {
             // padding-left: 100px;
         }
+    }
+
+    &__like-box {
+        max-width: 500px;
+        width: 100%;
+        transform: translateX(2%);
+
+        @include w($xl) {
+            max-width: 377px;
+        }
+    }
+
+    &__dislike-box {
+        transform: translateX(6%);
     }
 }
 
@@ -304,5 +324,11 @@
 .ps {
     &__title {
         margin-bottom: 30px;
+    }
+
+    &__container {
+        width: auto;
+        max-width: none;
+        padding-bottom: 80px;
     }
 }
