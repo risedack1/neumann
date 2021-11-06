@@ -48,9 +48,22 @@
 
     &--bg {
         background-image: url("../images/icons/work-bg.svg");
-        background-position: 45% center;
+        background-position: 43% 46%;
         background-size: 30%;
         background-repeat: no-repeat;
+
+        @include w($xl) {
+            background-position: 40% 41%;
+        }
+
+        @include w($lg) {
+            background-position: 50% 41%;
+        }
+    }
+
+    &__container {
+        width: auto;
+        max-width: none;
     }
 }
 
@@ -114,9 +127,15 @@
         max-width: 370px;
 
         @include w($xl) {
-            @include adaptiv-value("font-size", 50, 22, 1);
+            @include adaptiv-value("font-size", 50, 18, 1);
             margin-bottom: 20px;
-            max-width: 320px;
+            max-width: 300px;
+        }
+
+        @include w($lg) {
+            @include adaptiv-value("font-size", 50, 18, 1);
+            margin-bottom: 10px;
+            max-width: 400px;
         }
     }
 
@@ -140,7 +159,7 @@
     }
 
     &__dislike {
-        padding-left: 20px;
+        padding-left: 30px;
     }
 
     &__top {
@@ -229,6 +248,11 @@
                 width: 120%;
                 height: 120%;
             }
+
+            @include w($lg) {
+                width: 100%;
+                height: 100%;
+            }
         }
 
         @include w($xl) {
@@ -248,12 +272,20 @@
 
     &__dislike-box {
         transform: translateX(6%);
+
+        @include w($xl) {
+            transform: translate(6%, 17%);
+        }
     }
 }
 
 .dates {
     &__title {
         margin-bottom: 30px;
+    }
+
+    &__container {
+        padding-left: 20px;
     }
 }
 
