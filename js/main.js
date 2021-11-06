@@ -1,4 +1,12 @@
-const btnMenu = document.querySelector('.burger__btn');
+new fullpage('#fullpage', {
+    //options here
+    sectionSelector: '.section',
+    menu: "#menu",
+    scrollingSpeed: 1000,
+    responsiveWidth: 991
+});
+
+const btnMenu = document.querySelector('.burger');
 const menu = document.querySelector('.block-menu');
 
 const toggleMenu = function () {
@@ -20,13 +28,6 @@ document.addEventListener('click', function (e) {
     if (!its_menu && !its_btnMenu && menu_is_active) {
         toggleMenu();
     }
-});
-
-new fullpage('#fullpage', {
-    //options here
-    sectionSelector: '.section',
-    menu: "#menu",
-    scrollingSpeed: 1000,
 });
 
 //methods

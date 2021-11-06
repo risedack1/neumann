@@ -14,6 +14,57 @@ body {
     background-image: radial-gradient(50% 50% at 50% 50%, rgba(26, 26, 26, 0.93) 0%, #1a1a1a 100%);
 }
 
+@media screen and (orientation: portrait) {
+    .vertical-block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+
+        &::before {
+            content: 'Для продолжения работы с сайтом поверните устройство горизонтально';
+            font-size: 42px;
+            position: absolute;
+            text-align: center;
+            margin-top: -50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: 999;
+            background-image: url('../images/phone-horizontal.png');
+            background-position: center 70%;
+            background-size: 50%;
+            background-repeat: no-repeat;
+        }
+
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%, -50%);
+        //     background-image: url('../images/phone-horizontal.png');
+        //     background-position: center;
+        //     background-size: contain;
+        //     background-repeat: no-repeat;
+        // }
+
+    }
+
+    .main {
+        display: none;
+    }
+}
+
 .main {
     flex-grow: 1;
 }
@@ -45,6 +96,10 @@ body {
 
         @include w($xl) {
             max-width: 520px;
+        }
+
+        @include w($lg) {
+            max-width: 450px;
         }
     }
 

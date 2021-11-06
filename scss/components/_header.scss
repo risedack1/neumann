@@ -22,14 +22,26 @@
     }
 
     &__title {
-        @include adaptiv-value("font-size", 64, 36, 1);
+        @include adaptiv-value("font-size", 64, 18, 1);
+
+        @include w($lg) {
+            margin-bottom: 10px;
+        }
+
+        span {
+            margin-right: 10px;
+        }
     }
 
     &__inner {
         background-image: url("../images/header-bg-1.svg"), url("../images/header-bg-2.svg"), url("../images/header-bg-3.svg"), url("../images/header-bg-4.svg");
-        background-position: 52% 16%, 37% 41%, 50% 67%, 37% 97%;
+        background-position: 54% 14%, 40% 39%, 52% 65%, 38% 95%;
         background-size: 6%, 3%, 4%, 5%;
         background-repeat: no-repeat;
+
+        @include w($xl) {
+            background-position: 56% 14%, 42% 39%, 54% 65%, 41% 95%;
+        }
     }
 
     &__content {
@@ -65,6 +77,12 @@
             max-width: 290px;
             font-size: 16px;
         }
+
+        @include w($lg) {
+            max-width: 210px;
+            font-size: 12px;
+            padding-bottom: 10px;
+        }
     }
 
     &__caption {
@@ -78,6 +96,10 @@
         @include w($xl) {
             max-width: 550px;
             font-size: 16px;
+        }
+
+        @include w($lg) {
+            font-size: 14px;
         }
     }
 
@@ -101,6 +123,11 @@
             width: 26px;
             height: 26px;
         }
+
+        @include w($xl) {
+            width: 26px;
+            height: 26px;
+        }
     }
 }
 
@@ -115,6 +142,10 @@
 
         @include w ($xl) {
             font-size: 15px;
+        }
+
+        @include w ($lg) {
+            font-size: 12px;
         }
     }
 
@@ -140,6 +171,10 @@
     @include w($xl) {
         padding-top: 26px;
         margin-bottom: 8px;
+    }
+
+    @include w($lg) {
+        padding-top: 10px;
     }
 }
 
@@ -174,11 +209,22 @@
                 height: 35px;
                 right: -75px;
             }
+
+            @include w($lg) {
+                width: 20px;
+                height: 20px;
+                right: -40px;
+            }
         }
 
         @include w ($xl) {
             margin-bottom: 20px;
             font-size: 15px;
+        }
+
+        @include w($lg) {
+            margin-bottom: 10px;
+            font-size: 12px;
         }
     }
 
@@ -205,6 +251,10 @@
             font-size: 14px;
             height: 94px;
         }
+
+        @include w($lg) {
+            height: auto;
+        }
     }
 
     &__link {
@@ -217,6 +267,10 @@
 
         @include w($xl) {
             margin-bottom: 20px;
+        }
+
+        @include w($lg) {
+            margin-bottom: 10px;
         }
     }
 

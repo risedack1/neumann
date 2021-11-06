@@ -6,492 +6,501 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <title>Pavel Neumann</title>
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css">
     <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
-    <header class="header">
-        <div class="burger">
-            <button class="burger__btn" type="button" aria-label="открыть меню">
-                <span></span>
-            </button>
-            <span class="burger__caption">
-                Меню
-            </span>
-        </div>
-        <div class="block-menu">
-            <nav class="block-menu__nav">
-                <ul class="block-menu__list" id="menu">
-                    <li class="block-menu__item">
-                        <a class="block-menu__link block-menu__link--home" href="#hero" data-menuanchor="hero">
-                            <span class="block-menu__link-text block-menu__link-text--home">
-                                Главная
-                                <svg>
-                                    <use xlink:href="images/sprite.svg#home"></use>
-                                </svg>
-                            </span>
-                        </a>
-                    </li>
-                    <li class="block-menu__item">
-                        <a class="block-menu__link" href="#about" data-menuanchor="about">
-                            <span class="block-menu__link-text">
-                                Кратко о себе
-                            </span>
-                        </a>
-                    </li>
-                    <li class="block-menu__item">
-                        <a class="block-menu__link" href="#hobbies" data-menuanchor="hobbies">
-                            <span class="block-menu__link-text">
-                                Мои увлечения
-                            </span>
-                        </a>
-                    </li>
-                    <li class="block-menu__item">
-                        <a class="block-menu__link" href="#work" data-menuanchor="work">
-                            <span class="block-menu__link-text">
-                                Чем я занимаюсь
-                            </span>
-                        </a>
-                    </li>
-                    <li class="block-menu__item">
-                        <a class="block-menu__link" href="#likes" data-menuanchor="likes">
-                            <span class="block-menu__link-text">
-                                Что я люблю /<br>
-                                не люблю
-                            </span>
-                        </a>
-                    </li>
-                    <li class="block-menu__item">
-                        <a class="block-menu__link" href="#benefits" data-menuanchor="benefits">
-                            <span class="block-menu__link-text">
-                                Сильные стороны /<br>
-                                слабости
-                            </span>
-                        </a>
-                    </li>
-                    <li class="block-menu__item">
-                        <a class="block-menu__link" href="#dates" data-menuanchor="dates">
-                            <span class="block-menu__link-text">
-                                Свидания
-                            </span>
-                        </a>
-                    </li>
-                    <li class="block-menu__item">
-                        <a class="block-menu__link" href="#final" data-menuanchor="final">
-                            <span class="block-menu__link-text">
-                                Заключение
-                            </span>
-                        </a>
-                    </li>
-                    <li class="block-menu__item">
-                        <a class="block-menu__link" href="#ps" data-menuanchor="ps">
-                            <span class="block-menu__link-text">
-                                P.s.
-                            </span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="block-menu__social social-block">
-                <span class="social-block__title">
-                    Мои соцсети:
+    <div class="vertical-block">
+
+        <header class="header">
+            <button class="burger" type="button">
+                <div class="burger__btn burger__btn--touch" aria-label="открыть меню">
+                    <span></span>
+                </div>
+                <span class="burger__caption">
+                    Меню
                 </span>
-                <ul class="social-block__list">
-                    <li class="social-block__item">
-                        <a class="social-block__link" target="_blank" href="facebook.com">
-                            <svg>
-                                <use xlink:href="images/sprite.svg#facebook-icon"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="social-block__item">
-                        <a class="social-block__link" target="_blank" href="youtube.com">
-                            <svg>
-                                <use xlink:href="images/sprite.svg#youtube-icon"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <div class="fixed-block">
-        <a class="fixed-block__up" href="#hero" aria-label="подняться к начальному экрану"></a>
-        <a class="fixed-block__facebook" href="#" aria-label="ссылка на фейсбук"></a>
-    </div>
-
-    <div id="fullpage">
-        <section class="hero fullp section" data-anchor="hero">
-            <div class="container">
-                <div class="hero__inner fullp__inner">
-                    <div class="hero__content fullp__content">
-                        <div class="hero__social social-block">
-                            <span class="social-block__title">
-                                Мои соцсети:
-                            </span>
-                            <ul class="social-block__list">
-                                <li class="social-block__item">
-                                    <a class="social-block__link" target="_blank" href="facebook.com">
-                                        <svg>
-                                            <use xlink:href="images/sprite.svg#facebook-icon"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                                <li class="social-block__item">
-                                    <a class="social-block__link" target="_blank" href="youtube.com">
-                                        <svg>
-                                            <use xlink:href="images/sprite.svg#youtube-icon"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <h1 class="hero__title title">
-                            Pavel<br>Neumann -
-                        </h1>
-                        <div class="hero__subtitle">
-                            <p>
-                                то что не могу передать через социальные сети, расскажу о себе тут.
-                            </p>
-                        </div>
-                        <div class="hero__caption">
-                            <p>
-                                Чтобы начать пользоваться сайтом, нажмите на Меню или прокрутите сайт вниз
-                            </p>
-                        </div>
-
-                        <div class="hero__novelty novelty tabs">
-                            <a class="novelty__caption" href="#">
-                                Все мои новинки
+            </button>
+            <div class="block-menu">
+                <nav class="block-menu__nav">
+                    <ul class="block-menu__list" id="menu">
+                        <li class="block-menu__item">
+                            <a class="block-menu__link block-menu__link--home" href="#hero" data-menuanchor="hero">
+                                <span class="block-menu__link-text block-menu__link-text--home">
+                                    Главная
+                                    <svg>
+                                        <use xlink:href="images/sprite.svg#home"></use>
+                                    </svg>
+                                </span>
                             </a>
-                            <ul class="novelty__list tabs__content">
-                                <li class="novelty__box tabs-block active">
-                                    Послушай мою новую песню 🎸 на Youtube - <a class="novelty__link"
-                                        href="#">перейти</a>
-                                </li>
-                                <li class="novelty__box tabs-block">
-                                    Послушай мою новую песню 🎸 на Youtube 2 - <a class="novelty__link"
-                                        href="#">перейти</a>
-                                </li>
-                                <li class="novelty__box tabs-block">
-                                    Послушай мою новую песню 🎸 на Youtube 3 - <a class="novelty__link"
-                                        href="#">перейти</a>
-                                </li>
-                                <li class="novelty__box tabs-block">
-                                    Послушай мою новую песню 🎸 на Youtube 4 - <a class="novelty__link"
-                                        href="#">перейти</a>
-                                </li>
-                            </ul>
-                            <ul class="novelty__dots tabs__nav">
-                                <li class="novelty__dots-item tabs-item active" role="button"></li>
-                                <li class="novelty__dots-item tabs-item" role="button"></li>
-                                <li class="novelty__dots-item tabs-item" role="button"></li>
-                                <li class="novelty__dots-item tabs-item" role="button"></li>
-                            </ul>
-                            <a class="hero__arrow" href="#about"></a>
-                        </div>
-                    </div>
-                    <div class="fullp__image-box">
-                        <img src="images/header-photo.jpg" alt="photo">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="about fullp section" data-anchor="about">
-            <div class="container">
-                <div class="fullp__inner fullp__inner--revers">
-                    <div class="fullp__content fullp__content--center">
-                        <div class="fullp__container">
-                            <h2 class="about__title title">
-                                О себе 👨
-                            </h2>
-                            <div class="about__text">
-                                <p>
-                                    Целеустремленный, жизнерадостный, добрый ... где-то скромный, абсолютно адекватный,
-                                    объективный и современный молодой человек, среднего возраста 😊
-                                    Живу в моменте, получаю удовольствие от жизни .. делаю свое дело.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fullp__image-box">
-                        <img src="images/sections-photo/section-photo-1.jpg" alt="моя фотография">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="hobbies fullp section" data-anchor="hobbies">
-            <div class="container">
-                <div class="fullp__inner">
-                    <div class="fullp__content fullp__content--center">
-                        <div class="fullp__container">
-                            <h2 class="hobbies__title title">
-                                Мои увлечения 🏆
-                            </h2>
-                            <ul class="hobbies__list section-list">
-                                <li class="section-list__item">
-                                    Спорт (футбол, баскетбол, теннис)
-                                </li>
-                                <li class="section-list__item">
-                                    Музыка (записывая песни, пиши лирику когда есть время)
-                                </li>
-                                <li class="section-list__item">
-                                    Видео (снимаю и монтирую для себя и клиентов)
-                                </li>
-                                <li class="section-list__item">
-                                    Диетология (все что связано с весом)
-                                </li>
-                                <li class="section-list__item">
-                                    Психология (человеческих взаимоотношений)
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="fullp__image-box">
-                        <img src="images/sections-photo/section-photo-2.jpg" alt="моя фотография">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="work fullp section" data-anchor="work">
-            <div class="container">
-                <div class="fullp__inner fullp__inner--revers">
-                    <div class="fullp__content work--bg fullp__content--center">
-                        <div class="fullp__container">
-                            <h2 class="work__title title">
-                                Чем я занимаюсь 💼
-                            </h2>
-                            <ul class="work__list section-list">
-                                <li class="section-list__item">
-                                    IT (разработки)
-                                </li>
-                                <li class="section-list__item">
-                                    Торговля (Опт и розница)
-                                </li>
-                                <li class="section-list__item">
-                                    Авто (автосервис и подбор)
-                                </li>
-                                <li class="section-list__item">
-                                    Недвижимость (Аренда)
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="fullp__image-box">
-                        <img src="images/sections-photo/section-photo-3.jpg" alt="моя фотография">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="likes section" data-anchor="likes">
-            <div class="container likes__container">
-                <div class="likes__grid">
-                    <div class="likes__top double-section">
-                        <div class="likes__like double-section__like">
-                            <h2 class="likes__title title">
-                                Что я люблю делать 💖
-                            </h2>
-                            <ul class="likes__list section-list">
-                                <li class="section-list__item likes__list-item">
-                                    Спать (долго)
-                                </li>
-                                <li class="section-list__item likes__list-item">
-                                    Отдыхать (в хорошей компании)
-                                </li>
-                                <li class="section-list__item likes__list-item">
-                                    Готовить (готовлю все кроме десертов .. пока)
-                                </li>
-                                <li class="section-list__item likes__list-item">
-                                    Путешествовать
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="likes__dislike double-section__dislike">
-                            <h2 class="likes__title title">
-                                Что я не люблю 👎
-                            </h2>
-                            <ul class="likes__list section-list">
-                                <li class="section-list__item likes__list-item">
-                                    Отрицательных, закрытых людей
-                                </li>
-                                <li class="section-list__item likes__list-item">
-                                    Недосып, похмелье
-                                </li>
-                                <li class="section-list__item likes__list-item">
-                                    В пустую тратить свое время
-                                </li>
-                                <li class="section-list__item likes__list-item">
-                                    Зубных врачей
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <ul class="likes__gallery">
-                        <li class="likes__gallery-item">
-                            <img class="likes__gallery-image" src="images/my-gallery/my-gallery-1.jpg" alt="мое фото">
                         </li>
-                        <li class="likes__gallery-item">
-                            <img class="likes__gallery-image" src="images/my-gallery/my-gallery-2.jpg" alt="мое фото">
+                        <li class="block-menu__item">
+                            <a class="block-menu__link" href="#about" data-menuanchor="about">
+                                <span class="block-menu__link-text">
+                                    Кратко о себе
+                                </span>
+                            </a>
                         </li>
-                        <li class="likes__gallery-item">
-                            <img class="likes__gallery-image" src="images/my-gallery/my-gallery-3.jpg" alt="мое фото">
+                        <li class="block-menu__item">
+                            <a class="block-menu__link" href="#hobbies" data-menuanchor="hobbies">
+                                <span class="block-menu__link-text">
+                                    Мои увлечения
+                                </span>
+                            </a>
                         </li>
-                        <li class="likes__gallery-item">
-                            <img class="likes__gallery-image" src="images/my-gallery/my-gallery-4.jpg" alt="мое фото">
+                        <li class="block-menu__item">
+                            <a class="block-menu__link" href="#work" data-menuanchor="work">
+                                <span class="block-menu__link-text">
+                                    Чем я занимаюсь
+                                </span>
+                            </a>
                         </li>
-                        <li class="likes__gallery-item">
-                            <img class="likes__gallery-image" src="images/my-gallery/my-gallery-5.jpg" alt="мое фото">
+                        <li class="block-menu__item">
+                            <a class="block-menu__link" href="#likes" data-menuanchor="likes">
+                                <span class="block-menu__link-text">
+                                    Что я люблю /<br>
+                                    не люблю
+                                </span>
+                            </a>
+                        </li>
+                        <li class="block-menu__item">
+                            <a class="block-menu__link" href="#benefits" data-menuanchor="benefits">
+                                <span class="block-menu__link-text">
+                                    Сильные стороны /<br>
+                                    слабости
+                                </span>
+                            </a>
+                        </li>
+                        <li class="block-menu__item">
+                            <a class="block-menu__link" href="#dates" data-menuanchor="dates">
+                                <span class="block-menu__link-text">
+                                    Свидания
+                                </span>
+                            </a>
+                        </li>
+                        <li class="block-menu__item">
+                            <a class="block-menu__link" href="#final" data-menuanchor="final">
+                                <span class="block-menu__link-text">
+                                    Заключение
+                                </span>
+                            </a>
+                        </li>
+                        <li class="block-menu__item">
+                            <a class="block-menu__link" href="#ps" data-menuanchor="ps">
+                                <span class="block-menu__link-text">
+                                    P.s.
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="block-menu__social social-block">
+                    <span class="social-block__title">
+                        Мои соцсети:
+                    </span>
+                    <ul class="social-block__list">
+                        <li class="social-block__item">
+                            <a class="social-block__link" target="_blank" href="facebook.com">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#facebook-icon"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-block__item">
+                            <a class="social-block__link" target="_blank" href="youtube.com">
+                                <svg>
+                                    <use xlink:href="images/sprite.svg#youtube-icon"></use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </section>
-
-        <section class="benefits section" data-anchor="benefits">
-            <div class="container">
-                <div class="double-section double-section--full">
-                    <div class="benefits__like benefits__like--left double-section__like">
-                        <div class="benefits__like-box">
-                            <h2 class="benefits__title title">
-                                Мои сильные стороны 🔥
-                            </h2>
-                            <ul class="benefits__list section-list">
-                                <li class="section-list__item">
-                                    Решаю любые сложности.
-                                </li>
-                                <li class="section-list__item">
-                                    Уважаю людей и с уважением к ним отношусь.
-                                </li>
-                                <li class="section-list__item">
-                                    Хорошо коммуницирую с женским полом.
-                                </li>
-                                <li class="section-list__item">
-                                    Всегда мотивирован и настроен на результат.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="benefits__dislike benefits__dislike--left double-section__dislike">
-                        <div class="benefits__dislike-box">
-                            <h2 class="benefits__title title">
-                                <span>Мои</span> <br> слабости
-                            </h2>
-                            <ul class="benefits__list section-list">
-                                <li class="section-list__item">
-                                    Не люблю быть один
-                                </li>
-                                <li class="section-list__item">
-                                    Полеты на самолетах
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="dates fullp section" data-anchor="dates">
-            <div class="container">
-                <div class="fullp__inner">
-                    <div class="fullp__content heart-bg fullp__content--center">
-                        <div class="fullp__container">
-                            <h2 class="dates__title title">
-                                Свидания 💝
-                            </h2>
-                            <ul class="dates__list section-list">
-                                <li class="section-list__item">
-                                    Не люблю ставить взаимоотношение с человеком в какие-то рамки, я против них
-                                </li>
-                                <li class="section-list__item">
-                                    Люблю когда человек искренний и заряжен на действия 🔥
-                                </li>
-                                <li class="section-list__item">
-                                    Не люблю общение без эмоций, для меня это пустая трата времени 👌
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="fullp__image-box">
-                        <img src="images/sections-photo/section-photo-4.jpg" alt="моя фотография">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="final fullp section" data-anchor="final">
-            <div class="container">
-                <div class="fullp__inner fullp__inner--revers">
-                    <div class="fullp__content fullp__content--center">
-                        <div class="fullp__container">
-                            <h2 class="final__title title">
-                                Заключение 👋
-                            </h2>
-                            <div class="final__text">
-                                <p>
-                                    Если я тебе близок как человек, есть желание встретиться и пообщаться ты можешь
-                                    написать мне тут:
-                                </p>
-
-                                <a class="final__btn" href="#">
-                                    Написать
-                                </a>
-
-                                <p>
-                                    В случае если тебе не понравился Павел, тогда нажми закрыть и продолжай искать свое
-                                    счастье
-                                    🌞
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fullp__image-box final__image">
-                        <img src="images/sections-photo/section-photo-5.jpg" alt="моя фотография">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="ps fullp section" data-anchor="ps">
-            <div class="container">
-                <div class="fullp__inner">
-                    <div class="fullp__content fullp__content--center">
-                        <div class="fullp__container ps__container">
-                            <h2 class="ps__title title">
-                                P.s. 🐶
-                            </h2>
-                            <div class="ps__text">
-                                <p>
-                                    Живу один с любимой собакой 😊
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="fullp__image-box">
-                        <img src="images/sections-photo/section-photo-6.jpg" alt="моя фотография">
-                    </div>
-                </div>
-            </div>
-            <footer class="footer">
+        </header>
+        <div class="fixed-block">
+            <a class="fixed-block__up" href="#hero" aria-label="подняться к начальному экрану"></a>
+            <a class="fixed-block__facebook" href="#" aria-label="ссылка на фейсбук"></a>
+        </div>
+        <div id="fullpage" class="main">
+            <section class="hero fullp section fp-auto-height-responsive" data-anchor="hero">
                 <div class="container">
-                    <div class="footer__inner">
-                        <a class="footer__link" href="#">
-                            <span class="footer__text">
-                                Разработка сайта
-                            </span>
-                            <img class="footer__image" src="images/logo-ispace.png" alt="логотип ispace">
-                        </a>
+                    <div class="hero__inner fullp__inner">
+                        <div class="hero__content fullp__content">
+                            <div class="hero__social social-block">
+                                <span class="social-block__title">
+                                    Мои соцсети:
+                                </span>
+                                <ul class="social-block__list">
+                                    <li class="social-block__item">
+                                        <a class="social-block__link" target="_blank" href="facebook.com">
+                                            <svg>
+                                                <use xlink:href="images/sprite.svg#facebook-icon"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                    <li class="social-block__item">
+                                        <a class="social-block__link" target="_blank" href="youtube.com">
+                                            <svg>
+                                                <use xlink:href="images/sprite.svg#youtube-icon"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <h1 class="hero__title title">
+                                Pavel<br>Neumann -
+                            </h1>
+                            <div class="hero__subtitle">
+                                <p>
+                                    то что не могу передать через социальные сети, расскажу о себе тут.
+                                </p>
+                            </div>
+                            <div class="hero__caption">
+                                <p>
+                                    Чтобы начать пользоваться сайтом, нажмите на Меню или прокрутите сайт вниз
+                                </p>
+                            </div>
+
+                            <div class="hero__novelty novelty tabs">
+                                <a class="novelty__caption" href="#">
+                                    Все мои новинки
+                                </a>
+                                <ul class="novelty__list tabs__content">
+                                    <li class="novelty__box tabs-block active">
+                                        Послушай мою новую песню 🎸 на Youtube - <a class="novelty__link"
+                                            href="#">перейти</a>
+                                    </li>
+                                    <li class="novelty__box tabs-block">
+                                        Послушай мою новую песню 🎸 на Youtube 2 - <a class="novelty__link"
+                                            href="#">перейти</a>
+                                    </li>
+                                    <li class="novelty__box tabs-block">
+                                        Послушай мою новую песню 🎸 на Youtube 3 - <a class="novelty__link"
+                                            href="#">перейти</a>
+                                    </li>
+                                    <li class="novelty__box tabs-block">
+                                        Послушай мою новую песню 🎸 на Youtube 4 - <a class="novelty__link"
+                                            href="#">перейти</a>
+                                    </li>
+                                </ul>
+                                <ul class="novelty__dots tabs__nav">
+                                    <li class="novelty__dots-item tabs-item active" role="button"></li>
+                                    <li class="novelty__dots-item tabs-item" role="button"></li>
+                                    <li class="novelty__dots-item tabs-item" role="button"></li>
+                                    <li class="novelty__dots-item tabs-item" role="button"></li>
+                                </ul>
+                                <a class="hero__arrow" href="#about"></a>
+                            </div>
+                        </div>
+                        <div class="fullp__image-box">
+                            <img src="images/header-photo.jpg" alt="photo">
+                        </div>
                     </div>
                 </div>
-            </footer>
-        </section>
-    </div>
-    <div class="popup popup--callback">
+            </section>
+
+            <section class="about fullp section" data-anchor="about">
+                <div class="container">
+                    <div class="fullp__inner fullp__inner--revers">
+                        <div class="fullp__content fullp__content--center">
+                            <div class="fullp__container">
+                                <h2 class="about__title title">
+                                    О себе 👨
+                                </h2>
+                                <div class="about__text">
+                                    <p>
+                                        Целеустремленный, жизнерадостный, добрый ... где-то скромный, абсолютно
+                                        адекватный,
+                                        объективный и современный молодой человек, среднего возраста 😊
+                                        Живу в моменте, получаю удовольствие от жизни .. делаю свое дело.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fullp__image-box">
+                            <img src="images/sections-photo/section-photo-1.jpg" alt="моя фотография">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hobbies fullp section" data-anchor="hobbies">
+                <div class="container">
+                    <div class="fullp__inner">
+                        <div class="fullp__content fullp__content--center">
+                            <div class="fullp__container hobbies__container">
+                                <h2 class="hobbies__title title">
+                                    Мои увлечения 🏆
+                                </h2>
+                                <ul class="hobbies__list section-list">
+                                    <li class="section-list__item">
+                                        Спорт (футбол, баскетбол, теннис)
+                                    </li>
+                                    <li class="section-list__item">
+                                        Музыка (записывая песни, пиши лирику когда есть время)
+                                    </li>
+                                    <li class="section-list__item">
+                                        Видео (снимаю и монтирую для себя и клиентов)
+                                    </li>
+                                    <li class="section-list__item">
+                                        Диетология (все что связано с весом)
+                                    </li>
+                                    <li class="section-list__item">
+                                        Психология (человеческих взаимоотношений)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="fullp__image-box">
+                            <img src="images/sections-photo/section-photo-2.jpg" alt="моя фотография">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="work fullp section" data-anchor="work">
+                <div class="container">
+                    <div class="fullp__inner fullp__inner--revers">
+                        <div class="fullp__content work--bg fullp__content--center">
+                            <div class="fullp__container work__container">
+                                <h2 class="work__title title">
+                                    Чем я занимаюсь 💼
+                                </h2>
+                                <ul class="work__list section-list">
+                                    <li class="section-list__item">
+                                        IT (разработки)
+                                    </li>
+                                    <li class="section-list__item">
+                                        Торговля (Опт и розница)
+                                    </li>
+                                    <li class="section-list__item">
+                                        Авто (автосервис и подбор)
+                                    </li>
+                                    <li class="section-list__item">
+                                        Недвижимость (Аренда)
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="fullp__image-box">
+                            <img src="images/sections-photo/section-photo-3.jpg" alt="моя фотография">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="likes fullp section" data-anchor="likes">
+                <div class="container likes__container">
+                    <div class="likes__grid">
+                        <div class="likes__top double-section">
+                            <div class="likes__like double-section__like">
+                                <h2 class="likes__title title">
+                                    Что я люблю делать 💖
+                                </h2>
+                                <ul class="likes__list section-list">
+                                    <li class="section-list__item likes__list-item">
+                                        Спать (долго)
+                                    </li>
+                                    <li class="section-list__item likes__list-item">
+                                        Отдыхать (в хорошей компании)
+                                    </li>
+                                    <li class="section-list__item likes__list-item">
+                                        Готовить (готовлю все кроме десертов .. пока)
+                                    </li>
+                                    <li class="section-list__item likes__list-item">
+                                        Путешествовать
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="likes__dislike double-section__dislike">
+                                <h2 class="likes__title title">
+                                    Что я не люблю&nbsp;👎
+                                </h2>
+                                <ul class="likes__list section-list">
+                                    <li class="section-list__item likes__list-item">
+                                        Отрицательных, закрытых людей
+                                    </li>
+                                    <li class="section-list__item likes__list-item">
+                                        Недосып, похмелье
+                                    </li>
+                                    <li class="section-list__item likes__list-item">
+                                        В пустую тратить свое время
+                                    </li>
+                                    <li class="section-list__item likes__list-item">
+                                        Зубных врачей
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="likes__gallery">
+                            <li class="likes__gallery-item">
+                                <img class="likes__gallery-image" src="images/my-gallery/my-gallery-1.jpg"
+                                    alt="мое фото">
+                            </li>
+                            <li class="likes__gallery-item">
+                                <img class="likes__gallery-image" src="images/my-gallery/my-gallery-2.jpg"
+                                    alt="мое фото">
+                            </li>
+                            <li class="likes__gallery-item">
+                                <img class="likes__gallery-image" src="images/my-gallery/my-gallery-3.jpg"
+                                    alt="мое фото">
+                            </li>
+                            <li class="likes__gallery-item">
+                                <img class="likes__gallery-image" src="images/my-gallery/my-gallery-4.jpg"
+                                    alt="мое фото">
+                            </li>
+                            <li class="likes__gallery-item">
+                                <img class="likes__gallery-image" src="images/my-gallery/my-gallery-5.jpg"
+                                    alt="мое фото">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="benefits fullp section" data-anchor="benefits">
+                <div class="container">
+                    <div class="double-section double-section--full">
+                        <div class="benefits__like benefits__like--left double-section__like">
+                            <div class="benefits__like-box">
+                                <h2 class="benefits__title title">
+                                    Мои сильные стороны 🔥
+                                </h2>
+                                <ul class="benefits__list section-list">
+                                    <li class="section-list__item">
+                                        Решаю любые сложности.
+                                    </li>
+                                    <li class="section-list__item">
+                                        Уважаю людей и с уважением к ним отношусь.
+                                    </li>
+                                    <li class="section-list__item">
+                                        Хорошо коммуницирую с женским полом.
+                                    </li>
+                                    <li class="section-list__item">
+                                        Всегда мотивирован и настроен на результат.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="benefits__dislike benefits__dislike--left double-section__dislike">
+                            <div class="benefits__dislike-box">
+                                <h2 class="benefits__title title">
+                                    <span>Мои</span> <br> слабости
+                                </h2>
+                                <ul class="benefits__list section-list">
+                                    <li class="section-list__item">
+                                        Не люблю быть один
+                                    </li>
+                                    <li class="section-list__item">
+                                        Полеты на самолетах
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="dates fullp section" data-anchor="dates">
+                <div class="container">
+                    <div class="fullp__inner">
+                        <div class="fullp__content heart-bg fullp__content--center">
+                            <div class="fullp__container dates__container">
+                                <h2 class="dates__title title">
+                                    Свидания 💝
+                                </h2>
+                                <ul class="dates__list section-list">
+                                    <li class="section-list__item">
+                                        Не люблю ставить взаимоотношение с человеком в какие-то рамки, я против них
+                                    </li>
+                                    <li class="section-list__item">
+                                        Люблю когда человек искренний и заряжен на действия 🔥
+                                    </li>
+                                    <li class="section-list__item">
+                                        Не люблю общение без эмоций, для меня это пустая трата времени 👌
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="fullp__image-box">
+                            <img src="images/sections-photo/section-photo-4.jpg" alt="моя фотография">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="final fullp section" data-anchor="final">
+                <div class="container">
+                    <div class="fullp__inner fullp__inner--revers">
+                        <div class="fullp__content fullp__content--center">
+                            <div class="fullp__container">
+                                <h2 class="final__title title">
+                                    Заключение 👋
+                                </h2>
+                                <div class="final__text">
+                                    <p>
+                                        Если я тебе близок как человек, есть желание встретиться и пообщаться ты можешь
+                                        написать мне тут:
+                                    </p>
+
+                                    <a class="final__btn" href="#">
+                                        Написать
+                                    </a>
+
+                                    <p>
+                                        В случае если тебе не понравился Павел, тогда нажми закрыть и продолжай искать
+                                        свое
+                                        счастье
+                                        🌞
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fullp__image-box final__image">
+                            <img src="images/sections-photo/section-photo-5.jpg" alt="моя фотография">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ps fullp section" data-anchor="ps">
+                <div class="container">
+                    <div class="fullp__inner">
+                        <div class="fullp__content fullp__content--center">
+                            <div class="fullp__container ps__container">
+                                <h2 class="ps__title title">
+                                    P.s. 🐶
+                                </h2>
+                                <div class="ps__text">
+                                    <p>
+                                        Живу один с любимой собакой 😊
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fullp__image-box">
+                            <img src="images/sections-photo/section-photo-6.jpg" alt="моя фотография">
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="container">
+                        <div class="footer__inner">
+                            <a class="footer__link" href="#">
+                                <span class="footer__text">
+                                    Разработка сайта
+                                </span>
+                                <img class="footer__image" src="images/logo-ispace.png" alt="логотип ispace">
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+        </div>
+        <div class="popup popup--callback">
     <div class="popup__content">
         <div class="popup__body">
             <div class="popup__close"></div>
@@ -511,7 +520,8 @@
     </div>
 </div>
 
-
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
