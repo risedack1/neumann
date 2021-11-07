@@ -3,8 +3,9 @@ new fullpage('#fullpage', {
     sectionSelector: '.section',
     menu: "#menu",
     scrollingSpeed: 1000,
-    responsiveWidth: 991
 });
+
+fullpage_api.setAllowScrolling(true);
 
 const btnMenu = document.querySelector('.burger');
 const menu = document.querySelector('.block-menu');
