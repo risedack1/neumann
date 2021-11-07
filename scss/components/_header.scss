@@ -1,32 +1,6 @@
 .hero {
     position: relative;
 
-    &::before {
-        @include adaptiv-value("width", 1800, 350, 1);
-
-        content: "";
-        position: absolute;
-        left: -85%;
-        top: 56%;
-        height: 2px;
-        background-color: $light;
-        transform: translateY(-50%);
-
-        @include w($xl) {
-            @include adaptiv-value("width", 1800, 400, 1);
-            left: -80%;
-            top: 57%;
-        }
-
-        @include w($lg) {
-            top: 48%;
-        }
-
-        @include h(470px) {
-            top: 50%;
-        }
-    }
-
     &__title {
         @include adaptiv-value("font-size", 64, 18, 1);
 
@@ -76,10 +50,6 @@
         @include adaptiv-value("padding-top", 20, 0, 1);
 
         margin-top: auto;
-
-        @include w($lg) {
-            margin-top: 0;
-        }
     }
 
     &__subtitle {
@@ -108,6 +78,23 @@
         font-weight: 400;
         font-size: 19px;
         color: $primary;
+
+        &::before {
+            width: 500px;
+
+            content: "";
+            position: absolute;
+            left: -5%;
+            top: 50%;
+            height: 2px;
+            background-color: $light;
+            transform: rotate(180deg);
+            transform-origin: 0 0 0;
+
+            @include w($xl) {
+                @include adaptiv-value("width", 1800, 400, 1);
+            }
+        }
 
         @include w($xl) {
             max-width: 550px;
@@ -197,7 +184,7 @@
 
 .novelty {
     margin: 0;
-    margin-bottom: 40px;
+    margin-bottom: auto;
     width: auto;
     max-width: 520px;
 
@@ -323,11 +310,10 @@
     }
 
     @include w($xl) {
-        margin-bottom: 20px;
         max-width: 460px;
     }
 
-    @include w ($lg) {
+    @include h($md - 1px) {
         margin-bottom: auto;
     }
 }
