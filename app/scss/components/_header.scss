@@ -24,6 +24,12 @@
     &__title {
         @include adaptiv-value("font-size", 64, 18, 1);
 
+        br {
+            @include w($lg) {
+                display: none;
+            }
+        }
+
         @include w($lg) {
             margin-bottom: 10px;
         }
@@ -35,7 +41,7 @@
 
     &__inner {
         background-image: url("../images/header-bg-1.svg"), url("../images/header-bg-2.svg"), url("../images/header-bg-3.svg"), url("../images/header-bg-4.svg");
-        background-position: 54% 14%, 40% 39%, 52% 65%, 38% 95%;
+        background-position: 54% 10%, 40% 36%, 52% 62%, 38% 93%;
         background-size: 6%, 3%, 4%, 5%;
         background-repeat: no-repeat;
 
@@ -64,6 +70,10 @@
         @include adaptiv-value("padding-top", 20, 0, 1);
 
         margin-top: auto;
+
+        @include w($lg) {
+            margin-top: 0;
+        }
     }
 
     &__subtitle {
@@ -81,7 +91,7 @@
         @include w($lg) {
             max-width: 210px;
             font-size: 12px;
-            padding-bottom: 10px;
+            padding-bottom: 0;
         }
     }
 
@@ -99,7 +109,8 @@
         }
 
         @include w($lg) {
-            font-size: 14px;
+            font-size: 12px;
+            max-width: 400px;
         }
     }
 
@@ -174,7 +185,7 @@
     }
 
     @include w($lg) {
-        padding-top: 10px;
+        padding-top: 3%;
     }
 }
 
@@ -234,6 +245,10 @@
         @include w ($xl) {
             margin-bottom: 20px;
         }
+
+        @include w ($lg) {
+            margin-bottom: 10px;
+        }
     }
 
     &__box {
@@ -254,6 +269,7 @@
 
         @include w($lg) {
             height: auto;
+            font-size: 12px;
         }
     }
 
@@ -303,6 +319,10 @@
     @include w($xl) {
         margin-bottom: 20px;
         max-width: 460px;
+    }
+
+    @include w ($lg) {
+        margin-bottom: auto;
     }
 }
 

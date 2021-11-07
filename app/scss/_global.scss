@@ -45,19 +45,6 @@ body {
             background-size: 50%;
             background-repeat: no-repeat;
         }
-
-        // &::after {
-        //     content: '';
-        //     position: absolute;
-        //     top: 50%;
-        //     left: 50%;
-        //     transform: translate(-50%, -50%);
-        //     background-image: url('../images/phone-horizontal.png');
-        //     background-position: center;
-        //     background-size: contain;
-        //     background-repeat: no-repeat;
-        // }
-
     }
 
     .main {
@@ -70,7 +57,9 @@ body {
 }
 
 .fullp {
-    min-height: 100vh;
+    // min-height: 80vh;
+    height: 100vh;
+
 
     &__inner {
         display: flex;
@@ -109,11 +98,29 @@ body {
         width: 100%;
         height: 100vh;
 
+        @include w($lg) {
+            height: 86vh;
+        }
+
+        @include h(420px) {
+            height: 88vh !important;
+        }
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+    }
+}
+
+.main section.fullp {
+    @include w($lg) {
+        height: 86vh !important;
+    }
+
+    @include h(480px) {
+        height: 88vh !important;
     }
 }
 
