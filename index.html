@@ -7,7 +7,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <title>Pavel Neumann</title>
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="yandex-verification" content="f9b4f2ef96358382" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css">
     <link rel="stylesheet" href="css/style.min.css" />
 </head>
@@ -338,24 +338,24 @@
                         </div>
                         <ul class="likes__gallery">
                             <li class="likes__gallery-item">
-                                <img class="likes__gallery-image" src="images/my-gallery/my-gallery-1.jpg"
-                                    alt="мое фото">
+                                <img class="likes__gallery-image" data-fancybox="my-gallery"
+                                    src="images/my-gallery/my-gallery-1.jpg" alt="мое фото">
                             </li>
                             <li class="likes__gallery-item">
-                                <img class="likes__gallery-image" src="images/my-gallery/my-gallery-2.jpg"
-                                    alt="мое фото">
+                                <img class="likes__gallery-image" data-fancybox="my-gallery"
+                                    src="images/my-gallery/my-gallery-2.jpg" alt="мое фото">
                             </li>
                             <li class="likes__gallery-item">
-                                <img class="likes__gallery-image" src="images/my-gallery/my-gallery-3.jpg"
-                                    alt="мое фото">
+                                <img class="likes__gallery-image" data-fancybox="my-gallery"
+                                    src="images/my-gallery/my-gallery-3.jpg" alt="мое фото">
                             </li>
                             <li class="likes__gallery-item">
-                                <img class="likes__gallery-image" src="images/my-gallery/my-gallery-4.jpg"
-                                    alt="мое фото">
+                                <img class="likes__gallery-image" data-fancybox="my-gallery"
+                                    src="images/my-gallery/my-gallery-4.jpg" alt="мое фото">
                             </li>
                             <li class="likes__gallery-item">
-                                <img class="likes__gallery-image" src="images/my-gallery/my-gallery-5.jpg"
-                                    alt="мое фото">
+                                <img class="likes__gallery-image" data-fancybox="my-gallery"
+                                    src="images/my-gallery/my-gallery-5.jpg" alt="мое фото">
                             </li>
                         </ul>
                     </div>
@@ -468,7 +468,7 @@
             </section>
 
             <section class="ps fullp section" data-anchor="ps">
-                <div class="container">
+                <div class="container ps__container">
                     <div class="fullp__inner">
                         <div class="fullp__content fullp__content--center">
                             <div class="fullp__container ps__container">
@@ -482,23 +482,23 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="fullp__image-box">
+                        <div class="fullp__image-box fullp__image-box--ps">
                             <img src="images/sections-photo/section-photo-6.jpg" alt="моя фотография">
                         </div>
                     </div>
-                </div>
-                <footer class="footer">
-                    <div class="container">
-                        <div class="footer__inner">
-                            <a class="footer__link" href="#">
-                                <span class="footer__text">
-                                    Разработка сайта
-                                </span>
-                                <img class="footer__image" src="images/logo-ispace.png" alt="логотип ispace">
-                            </a>
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="footer__inner">
+                                <a class="footer__link" href="#">
+                                    <span class="footer__text">
+                                        Разработка сайта
+                                    </span>
+                                    <img class="footer__image" src="images/logo-ispace.png" alt="логотип ispace">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </footer>
+                    </footer>
+                </div>
             </section>
         </div>
         <div class="popup popup--callback">
@@ -522,6 +522,7 @@
 </div>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/vendors/scrolloverflow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
     <script src="js/main.min.js"></script>
