@@ -2,7 +2,7 @@ new fullpage('#fullpage', {
     //options here
     sectionSelector: '.section',
     menu: "#menu",
-    scrollingSpeed: 1000,
+    scrollingSpeed: 1100,
 });
 
 fullpage_api.setAllowScrolling(true);

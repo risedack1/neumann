@@ -8,8 +8,6 @@
         position: absolute;
         left: -85%;
         top: 56%;
-
-        // width: 1800px;
         height: 2px;
         background-color: $light;
         transform: translateY(-50%);
@@ -18,6 +16,14 @@
             @include adaptiv-value("width", 1800, 400, 1);
             left: -80%;
             top: 57%;
+        }
+
+        @include w($lg) {
+            top: 48%;
+        }
+
+        @include h(470px) {
+            top: 50%;
         }
     }
 

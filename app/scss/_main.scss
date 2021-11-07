@@ -183,11 +183,8 @@
     &__gallery {
         display: flex;
 
-        @include w($xl) {
-            height: 50%;
-        }
-
         @include w($lg) {
+            height: 50%;
             height: 46vh;
         }
     }
