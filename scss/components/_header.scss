@@ -21,7 +21,7 @@
 
     &__inner {
         background-image: url("../images/header-bg-1.svg"), url("../images/header-bg-2.svg"), url("../images/header-bg-3.svg"), url("../images/header-bg-4.svg");
-        background-position: 54% 10%, 40% 36%, 52% 62%, 38% 93%;
+        background-position: 56% 10%, 44% 36%, 54% 62%, 41% 93%;
         background-size: 6%, 3%, 4%, 5%;
         background-repeat: no-repeat;
 
@@ -289,6 +289,10 @@
         height: 5px;
         border-radius: 100%;
         background-color: $light;
+
+        &--disable {
+            pointer-events: none;
+        }
 
         &::after {
             content: "";
