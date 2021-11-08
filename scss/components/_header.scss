@@ -40,7 +40,7 @@
         @include adaptiv-value("max-width", 770, 400, 1);
 
         @include w($xl) {
-            padding-left: 50px;
+            padding-left: 20px;
 
         }
     }
