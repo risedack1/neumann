@@ -1,0 +1,381 @@
+.about {
+    &__title {
+        margin-bottom: 30px;
+
+        @include w($xl) {
+            margin-bottom: 20px;
+        }
+    }
+
+    @include w($xl) {
+        &__text {
+            font-size: 14px;
+        }
+    }
+}
+
+
+.section-list {
+    &__item {
+        margin-bottom: 10px;
+        margin-left: 20px;
+        list-style-type: disc;
+
+        @include w($xl) {
+            font-size: 14px;
+        }
+    }
+}
+
+.hobbies {
+    &__title {
+        margin-bottom: 30px;
+
+        @include w($xl) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.work {
+    &__title {
+        margin-bottom: 30px;
+
+        @include w($xl) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &--bg {
+        background-image: url("../images/icons/work-bg.svg");
+        background-position: 43% 57%;
+        background-size: 30%;
+        background-repeat: no-repeat;
+
+        @include w($xl) {
+            background-position: 40% 47%;
+        }
+
+        @include w($lg) {
+            background-position: 50% 41%;
+        }
+    }
+
+    &__container {
+        width: auto;
+        max-width: none;
+    }
+}
+
+.double-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 9%;
+        width: 2px;
+        height: 32%;
+        background-color: rgba(255, 255, 255, 0.5);
+        transform: translateX(-50%);
+    }
+
+    &--full {
+        &::before {
+            top: 50%;
+            height: 40%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__like,
+    &__dislike {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        max-width: 600px;
+
+        @include w($xl) {
+            max-width: 500px;
+        }
+    }
+}
+
+.likes {
+    // overflow-y: hidden;
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-end;
+    }
+
+    &__container {
+        height: 100%;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        font-size: 50px;
+        max-width: 370px;
+
+        @include w($xl) {
+            @include adaptiv-value("font-size", 50, 18, 1);
+            margin-bottom: 20px;
+            max-width: 300px;
+        }
+
+        @include w($lg) {
+            @include adaptiv-value("font-size", 50, 12, 1);
+            margin-bottom: 5px;
+            max-width: 400px;
+        }
+    }
+
+    &__like,
+    &__dislike {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        width: 100%;
+        max-width: 500px;
+
+        .likes__list-item {
+            margin-left: 20px;
+        }
+
+        @include w($xl) {
+            max-width: 370px;
+        }
+    }
+
+    &__dislike {
+        padding-left: 30px;
+    }
+
+    &__top {
+        margin-bottom: auto;
+        margin-top: auto;
+        padding: 0px 50px 0;
+
+        @include w($xl) {
+            padding: 0;
+            margin-top: auto;
+        }
+    }
+
+    &__item {
+        @include w($lg) {
+            margin-bottom: 5px;
+        }
+    }
+
+    &__gallery {
+        display: flex;
+
+        @include w($lg) {
+            height: 50%;
+            height: 46vh;
+        }
+    }
+
+    &__gallery-item {
+        width: 20%;
+
+        @include w($xl) {
+            height: 100%;
+        }
+    }
+
+    &__gallery-image {
+        width: 100%;
+        height: 100%;
+        // object-fit: cover;
+    }
+}
+
+
+.benefits {
+    &__title {
+        margin-bottom: 30px;
+        font-size: 64px;
+
+        span {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: -70px;
+                transform: translateY(-50%);
+                width: 48px;
+                height: 48px;
+                background-image: url('../images/sad-icon.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+
+        @include w($xl) {
+            @include adaptiv-value("font-size", 64, 22, 1);
+            margin-bottom: 20px;
+        }
+
+    }
+
+    &__like,
+    &__dislike {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 500px;
+            height: 500px;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            background-image: url('../images/icons/happy.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            @include w($xl) {
+                width: 120%;
+                height: 120%;
+            }
+
+            @include w($lg) {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        @include w($xl) {
+            // padding-left: 100px;
+        }
+    }
+
+    &__like-box {
+        max-width: 500px;
+        width: 100%;
+        transform: translateX(2%);
+
+        @include w($xl) {
+            max-width: 377px;
+        }
+    }
+
+    &__dislike-box {
+        transform: translateX(6%);
+
+        @include w($xl) {
+            transform: translate(6%, 17%);
+        }
+    }
+}
+
+.dates {
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__container {
+        padding-left: 20px;
+    }
+}
+
+.heart-bg {
+    background-image: url("../images/icons/dates-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @include w($xl) {
+        background-size: 40%;
+    }
+}
+
+.final {
+    &__title {
+        margin-bottom: 30px;
+
+        @include w($xl) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        display: inline-block;
+        margin: 40px 0;
+        padding: 16px 67px 16px 78px;
+        border-radius: 100px;
+        font-weight: 700;
+        font-size: 16px;
+        background-color: #4267b2;
+        transition: background-color 0.3s;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            width: 12px;
+            height: 24px;
+            background-image: url("../images/icons/facebook-transparent.svg");
+            transform: translateY(-50%);
+        }
+
+        &:hover {
+            background-color: #326de2;
+        }
+
+        @include w($xl) {
+            margin: 20px 0;
+            padding: 14px 57px 16px 68px;
+        }
+    }
+
+    &__text {
+        @include w($xl) {
+            font-size: 14px;
+        }
+    }
+
+    &__image {
+        img {
+            object-position: top;
+        }
+    }
+}
+
+.ps {
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__container {
+        width: auto;
+        max-width: none;
+        padding-bottom: 80px;
+    }
+
+    &__text {
+        @include w($xl) {
+            font-size: 14px;
+        }
+    }
+}
