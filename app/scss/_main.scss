@@ -9,7 +9,7 @@
 
     @include w($xl) {
         &__text {
-            font-size: 15px;
+            font-size: 14px;
         }
     }
 }
@@ -48,12 +48,12 @@
 
     &--bg {
         background-image: url("../images/icons/work-bg.svg");
-        background-position: 43% 46%;
+        background-position: 43% 57%;
         background-size: 30%;
         background-repeat: no-repeat;
 
         @include w($xl) {
-            background-position: 40% 41%;
+            background-position: 40% 47%;
         }
 
         @include w($lg) {
@@ -371,5 +371,11 @@
         width: auto;
         max-width: none;
         padding-bottom: 80px;
+    }
+
+    &__text {
+        @include w($xl) {
+            font-size: 14px;
+        }
     }
 }

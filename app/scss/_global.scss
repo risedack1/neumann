@@ -57,9 +57,11 @@ body {
 }
 
 .fullp {
+
     // min-height: 80vh;
     height: 100vh;
-
+    background-color: rgba(26, 26, 26, 0.93);
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(26, 26, 26, 0.93) 0%, #1a1a1a 100%);
 
     &__inner {
         display: flex;
@@ -120,6 +122,22 @@ body {
 
         @include h(420px) {
             height: 88vh;
+        }
+
+        &--hero {
+            @include adaptiv-value("max-width", 776, 265, 1);
+
+            @include h(1030x) {
+                max-width: 670px;
+            }
+
+            @include h($md) {
+                max-width: 500px;
+            }
+
+            @include h($sm) {
+                max-width: 350px;
+            }
         }
 
         &--ps {

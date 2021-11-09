@@ -1,12 +1,3 @@
-new fullpage('#fullpage', {
-    //options here
-    sectionSelector: '.section',
-    menu: "#menu",
-    scrollingSpeed: 1700,
-});
-
-fullpage_api.setAllowScrolling(true);
-
 const btnMenu = document.querySelector('.burger');
 const menu = document.querySelector('.block-menu');
 
@@ -30,6 +21,92 @@ document.addEventListener('click', function (e) {
         toggleMenu();
     }
 });
+
+let pageSlider = new Swiper('.fullpage', {
+    // Свои классы
+    wrapperClass: "fullpage__wrapper",
+    slideClass: "section",
+    direction: 'vertical',
+    slidesPerView: 'auto',
+
+
+    // Управление клавиатурой
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+    },
+    mousewheel: {
+        sensitivity: 1,
+    },
+    watchOverflow: true,
+
+
+    speed: 800,
+
+    observer: true,
+    observeParents: true,
+
+    observeSlideChildren: true,
+
+    init: false,
+
+    // События
+    on: {
+        init: function () {
+            menuSlider();
+            setScrollType();
+        },
+        slideChange: function () {
+            menuSliderRemove();
+            menuLinks[pageSlider.realIndex].classList.add('active');
+        },
+        resize: function () {
+            setScrollType();
+        }
+    },
+});
+
+let menuLinks = document.querySelectorAll('.block-menu__link');
+
+function menuSlider() {
+    if (menuLinks.length > 0) {
+        menuLinks[pageSlider.realIndex].classList.add('active');
+        for (let index = 0; index < menuLinks.length; index++) {
+            const menuLink = menuLinks[index];
+            menuLink.addEventListener("click", function (e) {
+                menuSliderRemove();
+                pageSlider.slideTo(index, 800);
+                menuLink.classList.add('active');
+                e.preventDefault();
+            });
+        }
+    }
+}
+
+function menuSliderRemove() {
+    let menuLinkActive = document.querySelector('.block-menu__link.active');
+    if (menuLinkActive) {
+        menuLinkActive.classList.remove('active');
+    }
+}
+
+let arrowUp = document.querySelector('.fixed-block__up');
+let arrowDown = document.querySelector('.hero__arrow');
+
+arrowUp.addEventListener("click", function (e) {
+    pageSlider.slideTo(0, 800);
+    e.preventDefault();
+});
+
+arrowDown.addEventListener("click", function (e) {
+    pageSlider.slideTo(1, 800);
+    e.preventDefault();
+});
+
+pageSlider.init();
+
+//---------------------------------------------------------------
 
 //methods
 // fullpage_api.setAllowScrolling(false);
@@ -219,7 +296,3 @@ document.addEventListener('keydown', function (e) {
     }
 });
 //-------------------------------------------------------------------------------------------------------
-
-$(function () {
-
-});
