@@ -37,7 +37,7 @@ let pageSlider = new Swiper('.fullpage', {
         pageUpDown: true,
     },
     mousewheel: {
-        sensitivity: 1,
+        sensitivity: 0.3,
     },
     watchOverflow: true,
 
