@@ -98,11 +98,7 @@ body {
         @include adaptiv-value("max-width", 670, 265, 1);
 
         width: 100%;
-        height: 100vh;
-
-        @include w($lg) {
-            height: 86vh;
-        }
+        height: 86vh;
 
         @include h(1030px) {
             max-width: 670px;
@@ -118,10 +114,6 @@ body {
 
         @include h($sm) {
             max-width: 350px;
-        }
-
-        @include h(420px) {
-            height: 88vh;
         }
 
         &--hero {
@@ -153,10 +145,6 @@ body {
 
             @include h(488px) {
                 height: calc(87vh - 60px);
-            }
-
-            img {
-                object-position: top;
             }
         }
 

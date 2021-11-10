@@ -42,12 +42,18 @@ let pageSlider = new Swiper('.fullpage', {
     watchOverflow: true,
 
 
-    speed: 2200,
+    speed: 400,
 
     observer: true,
     observeParents: true,
 
     observeSlideChildren: true,
+
+    breakpoints: {
+        991: {
+            speed: 2200,
+        }
+    },
 
     init: false,
 
