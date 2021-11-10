@@ -292,6 +292,12 @@
         @include w($xl) {
             transform: translate(6%, 17%);
         }
+
+        &--en {
+            @include w($xl) {
+                transform: translate(0, 0);
+            }
+        }
     }
 }
 
