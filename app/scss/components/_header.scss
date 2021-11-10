@@ -14,6 +14,10 @@
             margin-bottom: 10px;
         }
 
+        @include h(430px) {
+            margin-bottom: 5px;
+        }
+
         span {
             margin-right: 10px;
         }
@@ -50,6 +54,10 @@
         @include adaptiv-value("padding-top", 20, 0, 1);
 
         margin-top: auto;
+
+        @include h(430px) {
+            margin-top: auto;
+        }
     }
 
     &__subtitle {
@@ -68,6 +76,10 @@
             max-width: 210px;
             font-size: 12px;
             padding-bottom: 0;
+        }
+
+        @include h(430px) {
+            margin-bottom: 0;
         }
     }
 
@@ -97,13 +109,17 @@
         }
 
         @include w($xl) {
-            max-width: 550px;
+            max-width: 430px;
             font-size: 16px;
         }
 
         @include w($lg) {
             font-size: 12px;
             max-width: 400px;
+        }
+
+        @include h(430px) {
+            margin-bottom: 0;
         }
     }
 
@@ -180,6 +196,10 @@
     @include w($lg) {
         padding-top: 3%;
     }
+
+    @include h(430px) {
+        padding-top: 0;
+    }
 }
 
 .novelty {
@@ -229,6 +249,10 @@
         @include w($lg) {
             margin-bottom: 10px;
             font-size: 12px;
+        }
+
+        @include h(430px) {
+            margin-bottom: 0;
         }
     }
 
