@@ -120,7 +120,7 @@ body {
         &--hero {
             @include adaptiv-value("max-width", 776, 265, 1);
 
-            @media screen and (max-height: 1030px) {
+            @media (max-height: 1030px) and (max-width: 1366px) {
                 max-width: 670px;
             }
 
