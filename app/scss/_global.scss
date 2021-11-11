@@ -104,6 +104,10 @@ body {
         width: 100%;
         height: 100vh;
 
+        @media (any-hover: none) {
+            height: 87vh;
+        }
+
         @include h(1030px) {
             max-width: 670px;
         }
@@ -118,7 +122,6 @@ body {
 
         @include h($sm) {
             max-width: 350px;
-            height: 87vh;
         }
 
         &--hero {
