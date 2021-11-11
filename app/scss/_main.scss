@@ -116,6 +116,22 @@
         flex-direction: column;
         height: 100%;
         justify-content: flex-end;
+
+        @media (max-height: 1030px) and (max-width: 1366px) {
+            height: 90%;
+        }
+
+        @media (max-height: 770px) and (max-width: 1030px) {
+            height: 90%;
+        }
+
+        @include h($lg) {
+            height: 100%;
+        }
+
+        @media (max-height: 768px) and (max-width: 1030px) {
+            height: 90%;
+        }
     }
 
     &__container {
@@ -383,7 +399,6 @@
     &__container {
         width: auto;
         max-width: none;
-        padding-bottom: 80px;
     }
 
     &__text {

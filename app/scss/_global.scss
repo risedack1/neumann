@@ -94,6 +94,10 @@ body {
         }
     }
 
+    &--ps {
+        height: auto;
+    }
+
     &__image-box {
         @include adaptiv-value("max-width", 670, 265, 1);
 
