@@ -125,12 +125,8 @@
             height: 90%;
         }
 
-        @include h($lg) {
+        @include h(700px) {
             height: 100%;
-        }
-
-        @media (max-height: 768px) and (max-width: 1030px) {
-            height: 90%;
         }
     }
 
