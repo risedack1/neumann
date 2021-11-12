@@ -1,3 +1,11 @@
+window.addEventListener('resize', () => {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
+
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 const btnMenu = document.querySelector('.burger');
 const menu = document.querySelector('.block-menu');
 
