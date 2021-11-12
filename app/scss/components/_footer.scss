@@ -12,14 +12,15 @@
     }
 
     &__link {
-        height: 82px;
+        height: calc(var(--vh, 1vh) * 8);
+
+        @include w($sm) {
+            height: calc(var(--vh, 1vh) * 10);
+        }
+
         display: flex;
         align-items: center;
         justify-content: center;
-
-        @include w($xl) {
-            height: 60px;
-        }
     }
 
     &__text {

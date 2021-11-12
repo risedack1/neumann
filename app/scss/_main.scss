@@ -116,18 +116,8 @@
         flex-direction: column;
         height: 100%;
         justify-content: flex-end;
+        height: calc(var(--vh, 1vh) * 100);
 
-        @media (max-height: 1030px) and (max-width: 1366px) {
-            height: 90%;
-        }
-
-        @media (max-height: 770px) and (max-width: 1030px) {
-            height: 90%;
-        }
-
-        @include h(700px) {
-            height: 100%;
-        }
     }
 
     &__container {
