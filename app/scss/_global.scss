@@ -135,6 +135,10 @@ body {
 
             @include h($md) {
                 max-width: 500px;
+
+                img {
+                    object-position: bottom;
+                }
             }
 
             @include h($sm) {
