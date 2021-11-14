@@ -245,7 +245,15 @@ body.fp-viewing-hero {
     }
 
     &__social {
-        padding: 0 24px;
+        padding: 0 24px 10px;
+
+        @include h($lg) {
+            padding: 0 24px 30px;
+        }
+
+        @include h($sm) {
+            padding: 0 24px 10px;
+        }
 
         &--en {
             padding: 0 16px 0 24px;
